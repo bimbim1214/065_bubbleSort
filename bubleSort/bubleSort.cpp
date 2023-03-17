@@ -24,7 +24,7 @@ void input() {
         cin >> a[i];
     }
 }
-void bubblesotarray() {
+void bubblesortarray() {
     for (int i = 1; i < n; i++) {
         for (int j = 0; j < n - i; j++) {
             if (a[j] > a[j + 1]) {
@@ -58,9 +58,10 @@ void display() {
     cout << endl;
 }
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    input();
+    unsorted();
+    bubblesortarray();
+    display();
+    return 0;
 }
-
-
